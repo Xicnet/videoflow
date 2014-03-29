@@ -1,0 +1,62 @@
+
+HOWTO INSTALL
+=============
+
+If you got here it might be obvious you know you need PD to run this program
+it was developed and tested using PD 0.37.0
+
+Note that you need a dualhead (or TV-out) video card also capable for opening several
+xv (XVideo eXtension) windows if you want to have the preview monitors
+plus a second screen output to hook up to a beamer and get through to a BIG screen.
+
+
+STEP 0 :: A) untar the tarball in your favorite location (/usr/local or /usr/local/patches/
+             is recommended) and create a symlink to videoflow-XX where XX is the version.
+
+             # tar xzvf videoflow-1.1.tgz
+             # ln -s videoflow-1.1 videoflow
+
+          B) cd to videoflow and follow the next steps
+
+STEP 1 :: install all required dependencies
+
+Required externals
+
+* PDP (tested with 0.12.3)
+* PiDiP (tested with 0.12.16)
+* playlist
+* Gem (scale and oneshot are used, at least)
+* maxlib
+* zexy
+
+All of the above are critical for the patch to work.
+
+Optional externals
+
+* grid - nice for controlling some effects
+* colorgrid - nice for picking colors in certain effects like the alpha blending (pdp_compose)
+* countund - nice for some funny automatic effects
+* OSC - nice for receiveing text input from a webform from the network
+* fiddle~ - nice for some audio analysis for automatic video effects control
+* linuxjoystick - nice for having joystick control for the effects and mix
+
+It is recommended that you don't use a .pdrc file, but instead stick to the configuration
+set in the videoflow.sh
+
+STEP 2 :: Edit videoflow.sh shell script & fix your paths and stuff according to your system setup.
+
+STEP 3 :: Run videoflow using the following command: ./scripts/videoflow.sh
+
+if step 3 works, you can copy scripts/videoflow.sh to /usr/local/bin so that you can just type videoflow.sh on any console and the program will start
+
+STEP 4 :: fix your paths to point to the directories where your movies live, and take control
+
+STEP 5 :: choose a movie in channel A & B, and activate the video windows clicking the
+          togglebox on the bottom-right side of the controls patch where reads: XV ON/OFF
+	  NOTE that you should set your video windows to stay on top, and it is also
+	  preferrable that you set their position automatically by clicking on the radio
+	  box just below the XV ON/OFF switch
+
+STEP 6 :: have a lot of fun !
+
+in case of problems (you will have!), don't hesitate to contact me at pdrama@xicnet.com

@@ -1,0 +1,6 @@
+
+known bugs
+
+* at least the critical one is that all of a sudden pd will crash completely.
+seems like a memory leak. I use 256 of phisical RAM and just as little as 128MB
+of swap. tell me what you get!

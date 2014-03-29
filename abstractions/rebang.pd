@@ -1,0 +1,18 @@
+#N canvas 0 0 1562 1072 10;
+#X obj 83 62 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 83 154 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 95 105 delay 10;
+#X obj 73 24 inlet;
+#X obj 71 203 outlet;
+#X text 263 87 * rebang : resends a bang after 10 ms. (2 times) usefull
+for trig a bang-off (note off) of a bang-on (note on);
+#X obj 143 25 inlet;
+#X text 256 130 second inlet define delay of 2nd bang.;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 4 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X connect 6 0 2 1;

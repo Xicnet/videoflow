@@ -1,0 +1,38 @@
+
+VideoFlow - a video multi-sources mixer, fx processor, and streamer (C) Copyleft 2004
+=====================================================================================
+
+This patch is a fully functional end-user application to mix several
+video sources into a final one signal, display locally on a videoprojector,
+and stream it out to the Internet.
+
+It is intented to be part of a collection of free & open global communication
+tools aimed for distributed collaborative participation/interaction.
+
+Features:
+
+* two-channel harddrive movies playlists with preview for each channel A & B
+* live inputs: webcam & TV-capture card
+* peer2peer send and receive video signals over the LAN (not so tested!)
+* final mix preview/monitor and BIG screen (for dualhead or TV-out) to beam it!
+* record final mix to harddrive
+* stream final mix to an ffmpeg server for Internet broadcast
+* MIDI faders (controller 7 : volume) control for effects and mix sliders
+* joystick control for effects
+
+Please read the INSTALL document for directions on how to put this to work.
+
+NOTE that this is absolutely experimental, and an all-the-time-development
+so many things might change all of a sudden, things might be broken/not working,
+and there is not any kind warranty at all.
+
+If you want to contribute and help in the development or have any difficulties
+putting this to work or whatever, just contact me.
+
+Any feedback is more than welcome, so feel free to tell me your experiences
+trying this piece of software.
+
+You might have many problems with all this
+
+you might result an alpha tester
+feel free to contact pdrama@xicnet.com

@@ -1,0 +1,27 @@
+#N canvas -4 -5 1562 1072 10;
+#X floatatom 120 100 5 0 0 0 - - -;
+#X floatatom 72 99 5 0 0 0 - - -;
+#X floatatom 100 145 5 0 0 0 - - -;
+#X obj 102 122 &;
+#X obj 96 164 select 1;
+#X obj 105 184 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 42 82 button combinations;
+#X text 48 97 A;
+#X text 161 99 B;
+#X text 129 185 button A + button B;
+#X obj 57 18 inlet;
+#X obj 127 20 inlet;
+#X obj 95 236 outlet;
+#X text 302 98 outlet bangs when buttons A + B are pressed on this
+order. inlets must be connecteds to some toggle (1 when note on = button
+pressed);
+#X text 335 32 * trickb : combine buttons function;
+#X connect 0 0 3 0;
+#X connect 1 0 3 1;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 4 0 5 0;
+#X connect 5 0 12 0;
+#X connect 10 0 1 0;
+#X connect 11 0 0 0;

@@ -1,0 +1,28 @@
+#N canvas 0 0 1562 1072 10;
+#X obj 67 117 bng 15 250 50 0 empty empty empty 0 -6 0 8 -258699 -1
+-1;
+#X obj 99 117 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 206 117 bng 15 250 50 0 empty empty empty 0 -6 0 8 -258699 -1
+-1;
+#X obj 120 116 select 1 0;
+#X obj 67 138 loadbang;
+#X msg 152 139 1;
+#X obj 130 139 bng 15 250 50 0 empty empty empty 0 -6 0 8 -128992 -1
+-1;
+#X text 97 97 kill note off;
+#X obj 62 28 inlet;
+#X obj 203 198 outlet;
+#X text 289 81 receive a first bang (note on) and sends the bang to
+the outlet. The next bang received (note off) is blocked and not sended
+to the outlet.;
+#X text 293 36 killnoff;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 9 0;
+#X connect 3 1 2 0;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 8 0 0 0;

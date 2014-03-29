@@ -1,0 +1,27 @@
+#N canvas 479 527 652 171 10;
+#X msg 15 -100 1;
+#X msg 52 -100 0;
+#X obj 37 -71 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 11 -62 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 13 -138 inlet;
+#X obj 56 -138 inlet;
+#X obj 38 -31 outlet;
+#X text 197 -150 * joybut: Monitor a joystick pressed button. inlet
+1 receives note ons (bang) and inlet 2 receives note offs (bang). Connect
+the output to a toggle to see if button is pressed (toggle on) or not.
+;
+#X obj 108 -140 loadbang;
+#X obj 108 -115 bng 15 250 50 0 empty empty empty 0 -6 0 8 -128992
+-1 -1;
+#X msg 129 -115 0;
+#X connect 0 0 2 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 6 0;
+#X connect 4 0 0 0;
+#X connect 5 0 1 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 2 0;
