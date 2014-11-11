@@ -1,1 +1,0 @@
-pd-extended  -lib /home/rama/pd-extra/pdp -lib /home/rama/pd-extra/pidip -path /usr/lib/pd-extended/extra/ -path /home/rama/dev/videoflow-1.2/abstractions -noaudio -mididev 1 -lib pidip -lib playlist -lib OSC -lib maxlib -lib zexy -lib linuxjoystick main.pd
