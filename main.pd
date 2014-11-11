@@ -1,4 +1,4 @@
-#N canvas 130 630 1096 424 10;
+#N canvas 131 631 1096 424 10;
 #X obj -872 -6 cnv 15 800 400 empty empty empty 20 12 0 14 -260818
 -66577 0;
 #N canvas 0 23 1259 700 mixer 0;
@@ -897,7 +897,7 @@
 #X connect 41 0 37 1;
 #X connect 42 0 39 0;
 #X restore -805 276 pd mixer;
-#N canvas 67 319 986 682 controls 1;
+#N canvas 606 206 986 682 controls 1;
 #X obj -36 -358 cnv 15 1000 690 empty empty empty 20 12 0 14 -99865
 -66577 0;
 #X obj 98 -136 playlist all 200 150 {Helvetica 10 bold} white yellow
@@ -911,9 +911,9 @@ black red;
 #X msg 95 30 open \$1;
 #X msg 543 27 open \$1;
 #X obj 643 33 hsl 60 15 0 300 0 0 mov2_speed mov2_speed_ctl speed -2
--6 0 10 -241291 -1 -1 957 1;
+-6 0 10 -241291 -1 -1 2557 1;
 #X obj 195 35 hsl 60 15 10 200 0 0 empty mov1_speed_ctl speed -2 -6
-0 10 -241291 -1 -1 726 1;
+0 10 -241291 -1 -1 1126 1;
 #X floatatom 640 52 5 0 0 0 - - -;
 #X floatatom 192 56 5 0 0 0 - - mov1_speed;
 #X text 543 70 auto seek;
@@ -988,13 +988,13 @@ black red;
 #X obj 175 166 vsl 15 128 0 127 0 0 ctl11 jfader4 empty 0 -8 0 8 -241291
 -1 -1 0 1;
 #X obj 217 166 vsl 15 128 0 127 0 0 ctl6 jfader6 empty 0 -8 0 8 -241291
--1 -1 0 1;
+-1 -1 5184 1;
 #X obj 238 166 vsl 15 128 0 127 0 0 ctl7 jfader7 empty 0 -8 0 8 -241291
 -1 -1 0 1;
 #X obj 197 166 vsl 15 128 0 127 0 0 ctl12 jfader5 empty 0 -8 0 8 -241291
 -1 -1 0 1;
 #X obj 259 166 vsl 15 128 0 127 0 0 ctl8 jfader8 empty 0 -8 0 8 -241291
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 112 125 tgl 15 0 empty j1 empty 0 -6 0 8 -241291 -1 -1 0 1;
 #X obj 133 125 tgl 15 0 empty j2 empty 0 -6 0 8 -241291 -1 -1 0 1;
 #X obj 154 125 tgl 15 0 empty j3 empty 0 -6 0 8 -241291 -1 -1 0 1;
@@ -1559,27 +1559,27 @@ black red;
 #X obj 155 210 tgl 15 0 empty q empty 0 -6 0 8 -262144 -1 -1 1 1;
 #X obj 171 210 tgl 15 0 empty w empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 187 210 tgl 15 0 empty e empty 0 -6 0 8 -262144 -1 -1 1 1;
-#X obj 203 210 tgl 15 0 empty r empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 203 210 tgl 15 0 empty r empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 219 210 tgl 15 0 empty t empty 0 -6 0 8 -262144 -1 -1 1 1;
-#X obj 235 210 tgl 15 0 empty y empty 0 -6 0 8 -262144 -1 -1 0 1;
-#X obj 251 210 tgl 15 0 empty u empty 0 -6 0 8 -262144 -1 -1 1 1;
-#X obj 267 210 tgl 15 0 empty i empty 0 -6 0 8 -262144 -1 -1 0 1;
+#X obj 235 210 tgl 15 0 empty y empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 251 210 tgl 15 0 empty u empty 0 -6 0 8 -262144 -1 -1 0 1;
+#X obj 267 210 tgl 15 0 empty i empty 0 -6 0 8 -262144 -1 -1 1 1;
 #X obj 283 210 tgl 15 0 empty o empty 0 -6 0 8 -262144 -1 -1 0 1;
-#X obj 299 210 tgl 15 0 empty p empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 299 210 tgl 15 0 empty p empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 314 210 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X obj 330 210 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X obj 147 194 hradio 16 1 0 13 mix_toggle mode empty 0 -6 0 8 -262144
 -1 -1 0;
-#X obj 161 226 tgl 15 0 empty a empty 0 -6 0 8 -262144 -1 -1 0 1;
-#X obj 177 226 tgl 15 0 empty s empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 161 226 tgl 15 0 empty a empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 177 226 tgl 15 0 empty s empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 193 226 tgl 15 0 empty d empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 209 226 tgl 15 0 empty f empty 0 -6 0 8 -262144 -1 -1 1 1;
 #X obj 225 226 tgl 15 0 empty g empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 241 226 tgl 15 0 empty h empty 0 -6 0 8 -262144 -1 -1 0 1;
-#X obj 257 226 tgl 15 0 empty j empty 0 -6 0 8 -262144 -1 -1 0 1;
-#X obj 273 226 tgl 15 0 empty k empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 257 226 tgl 15 0 empty j empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 273 226 tgl 15 0 empty k empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 289 226 tgl 15 0 empty l empty 0 -6 0 8 -262144 -1 -1 1 1;
 #X obj 305 226 tgl 15 0 empty nada empty 0 -6 0 8 -262144 -1 -1 0 1
 ;
@@ -1622,19 +1622,19 @@ black red;
 #X obj 112 144 tgl 15 0 empty q empty 0 -6 0 8 -241291 -1 -1 1 1;
 #X obj 133 144 tgl 15 0 empty w empty 0 -6 0 8 -241291 -1 -1 0 1;
 #X obj 154 144 tgl 15 0 empty e empty 0 -6 0 8 -241291 -1 -1 1 1;
-#X obj 175 144 tgl 15 0 empty r empty 0 -6 0 8 -241291 -1 -1 1 1;
+#X obj 175 144 tgl 15 0 empty r empty 0 -6 0 8 -241291 -1 -1 0 1;
 #X obj 196 144 tgl 15 0 empty t empty 0 -6 0 8 -241291 -1 -1 1 1;
-#X obj 217 144 tgl 15 0 empty y empty 0 -6 0 8 -241291 -1 -1 0 1;
-#X obj 238 144 tgl 15 0 empty u empty 0 -6 0 8 -241291 -1 -1 1 1;
-#X obj 259 144 tgl 15 0 empty i empty 0 -6 0 8 -241291 -1 -1 0 1;
-#X obj 558 143 tgl 15 0 empty a empty 0 -6 0 8 -241291 -1 -1 0 1;
-#X obj 579 143 tgl 15 0 empty s empty 0 -6 0 8 -241291 -1 -1 1 1;
+#X obj 217 144 tgl 15 0 empty y empty 0 -6 0 8 -241291 -1 -1 1 1;
+#X obj 238 144 tgl 15 0 empty u empty 0 -6 0 8 -241291 -1 -1 0 1;
+#X obj 259 144 tgl 15 0 empty i empty 0 -6 0 8 -241291 -1 -1 1 1;
+#X obj 558 143 tgl 15 0 empty a empty 0 -6 0 8 -241291 -1 -1 1 1;
+#X obj 579 143 tgl 15 0 empty s empty 0 -6 0 8 -241291 -1 -1 0 1;
 #X obj 600 143 tgl 15 0 empty d empty 0 -6 0 8 -241291 -1 -1 0 1;
 #X obj 621 143 tgl 15 0 empty f empty 0 -6 0 8 -241291 -1 -1 1 1;
 #X obj 642 143 tgl 15 0 empty g empty 0 -6 0 8 -241291 -1 -1 0 1;
 #X obj 663 143 tgl 15 0 empty h empty 0 -6 0 8 -241291 -1 -1 0 1;
-#X obj 684 143 tgl 15 0 empty j empty 0 -6 0 8 -241291 -1 -1 0 1;
-#X obj 705 143 tgl 15 0 empty k empty 0 -6 0 8 -241291 -1 -1 1 1;
+#X obj 684 143 tgl 15 0 empty j empty 0 -6 0 8 -241291 -1 -1 1 1;
+#X obj 705 143 tgl 15 0 empty k empty 0 -6 0 8 -241291 -1 -1 0 1;
 #X text 729 159 10) edge;
 #X text 729 174 11) nervous;
 #X obj 331 25 cnv 15 210 90 empty empty empty 20 8 0 11 -260818 -66577
@@ -3186,7 +3186,7 @@ black red;
 #X connect 152 0 6 0;
 #X connect 152 1 2 0;
 #X restore -809 341 pd abrevideo;
-#N canvas 839 539 939 490 vfx 0;
+#N canvas 840 540 939 490 vfx 1;
 #X text 273 27 video fx chain;
 #N canvas 407 270 389 291 vxf1_dados 0;
 #X floatatom 175 -75 5 0 0 0 - - -;
@@ -3206,7 +3206,7 @@ black red;
 #X obj 198 -215 r dadosauto1_speed;
 #X obj 127 -56 pdp_dice;
 #X obj 32 -82 pdp_spigot;
-#X obj 97 -114 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1
+#X obj 97 -114 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
 #X obj 88 -144 r u;
 #X connect 0 0 13 1;
@@ -3227,28 +3227,32 @@ black red;
 #X connect 15 0 14 1;
 #X connect 16 0 15 0;
 #X restore -67 144 pd vxf1_dados;
-#N canvas 401 321 450 300 vfx1_gain 0;
+#N canvas 75 377 450 300 vfx1_gain 1;
 #X obj 173 167 pdp_gain;
 #X floatatom 242 103 5 0 0 0 - - -;
-#X obj 242 127 + 1;
-#X obj 242 77 / 60;
 #X obj 78 89 inlet;
 #X obj 97 234 outlet;
-#X obj 242 49 r gain1;
+#X obj 194 33 r gain1;
 #X obj 93 137 pdp_spigot;
-#X obj 160 109 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+#X obj 160 109 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1
 1;
 #X obj 160 78 r i;
-#X connect 0 0 5 0;
-#X connect 1 0 2 0;
-#X connect 2 0 0 1;
-#X connect 3 0 1 0;
-#X connect 4 0 7 0;
-#X connect 6 0 3 0;
-#X connect 7 0 5 0;
-#X connect 7 1 0 0;
-#X connect 8 0 7 1;
+#X floatatom 364 68 5 0 0 0 - - -;
+#X obj 253 27 r ctl8;
+#X obj 242 77 / 20;
+#X obj 242 127 + 1;
+#X connect 0 0 3 0;
+#X connect 1 0 11 0;
+#X connect 2 0 5 0;
+#X connect 4 0 10 0;
+#X connect 5 0 3 0;
+#X connect 5 1 0 0;
+#X connect 6 0 5 1;
+#X connect 7 0 6 0;
+#X connect 8 0 10 0;
 #X connect 9 0 8 0;
+#X connect 10 0 1 0;
+#X connect 11 0 0 1;
 #X restore -67 170 pd vfx1_gain;
 #N canvas 0 337 357 310 vfx1_transforma 0;
 #X obj 96 207 pdp_transform;
@@ -3880,7 +3884,7 @@ black red;
 #X connect 27 0 21 0;
 #X connect 29 0 7 0;
 #X restore -67 303 pd graffiti;
-#N canvas 812 360 986 680 vfx1_charcoal 0;
+#N canvas 814 362 986 680 vfx1_charcoal 0;
 #X floatatom 322 277 5 0 0 0 - - -;
 #X text 389 275 Blur factor;
 #N canvas 346 16 870 675 edge_detect 0;
@@ -4024,12 +4028,12 @@ black red;
 #X obj 216 236 pdp_spigot;
 #X obj 296 237 tgl 15 0 empty x empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 215 480 pdp_spigot;
-#X obj 298 480 tgl 15 0 empty c empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 298 480 tgl 15 0 empty c empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 216 138 pdp_spigot;
 #X obj 306 137 tgl 15 0 empty z empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 216 76 pdp_grey;
 #X obj 216 47 pdp_spigot;
-#X obj 298 48 tgl 15 0 empty b empty 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 298 48 tgl 15 0 empty b empty 0 -6 0 8 -262144 -1 -1 0 1;
 #X text 273 26 on/off;
 #X text 272 118 on/off;
 #X text 271 217 on/off;
@@ -4204,7 +4208,7 @@ black red;
 #X restore 619 259 pd shape;
 #X obj 600 43 r saux3;
 #X obj 514 245 s raux3;
-#N canvas 526 304 675 424 vfx1_ascii 0;
+#N canvas 527 305 675 424 vfx1_ascii 1;
 #X msg 132 132 color \$1;
 #X obj 203 133 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 1;
@@ -4217,7 +4221,7 @@ black red;
 #X obj 295 92 r ctl6;
 #X floatatom 316 242 5 0 0 0 - - -;
 #X obj 282 194 maxlib/scale 0 127 0.25 12.45;
-#X obj 83 92 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+#X obj 83 92 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
 ;
 #X obj -6 114 pdp_spigot;
 #X obj 72 216 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
@@ -4298,7 +4302,7 @@ black red;
 #X msg 108 60 vmask -1 0 0;
 #X msg 129 203 chanmask 6;
 #X obj -31 37 pdp_spigot;
-#X obj 56 -15 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+#X obj 56 -15 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
 ;
 #X obj 92 -38 r a;
 #X floatatom 160 142 5 0 0 0 - - -;
@@ -4385,7 +4389,7 @@ black red;
 #X obj 51 51 inlet;
 #X obj 120 218 outlet;
 #X obj 62 112 pdp_spigot;
-#X obj 138 73 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+#X obj 138 73 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
 ;
 #X obj 176 12 r ctl10;
 #X obj 108 25 r s;
@@ -4605,7 +4609,7 @@ received on its only outlet. seems to be pretty stable.;
 #X connect 20 3 19 0;
 #X connect 20 4 21 0;
 #X restore -600 131 pd osc_control;
-#N canvas 176 319 1106 708 arduino_control 0;
+#N canvas 177 320 1106 708 arduino_control 1;
 #X msg 286 431 66;
 #X msg 244 431 64;
 #X text 283 413 point;
